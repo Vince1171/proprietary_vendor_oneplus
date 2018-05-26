@@ -521,18 +521,4 @@ PRODUCT_PACKAGES += \
     libqmi_client_qmux \
     libqmiservices \
     libtime_genoff \
-    QtiTelephonyService \
-    TimeService \
-    datastatusnotification \
-    fastdormancy \
-    shutdownlistener \
-    CNEService \
-    QtiTetherService \
-    com.qualcomm.location \
-    dpmserviceapp \
-    qcrilmsgtunnel \
-    ims \
-    imssettings \
-    qcnvitems \
-    qcrilhook \
     pp_calib_data_jd35695_1080p_cmd_mode_dsi_panel
