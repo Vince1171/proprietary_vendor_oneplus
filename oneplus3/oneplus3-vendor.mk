@@ -826,23 +826,7 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libsdm-disp-apis \
     libthermalclient \
-    libtime_genoff \
-    QtiTelephonyService \
-    TimeService \
-    datastatusnotification \
-    embms \
-    fastdormancy \
-    shutdownlistener \
-    CNEService \
-    QtiTetherService \
-    com.qualcomm.location \
-    dpmserviceapp \
-    qcrilmsgtunnel \
-    colorservice \
-    ims \
-    imssettings \
-    qcnvitems \
-    qcrilhook
+    libtime_genoff
 endif
 
 -include vendor/extra/devices.mk
