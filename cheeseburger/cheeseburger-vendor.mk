@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -339,7 +339,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libseemore.so:system/vendor/lib64/libseemore.so
 
 PRODUCT_PACKAGES += \
-    IFAAService \
     dashd
 
 ifeq ($(QCPATH),)
@@ -426,21 +425,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/qdcm_calib_data_samsung_s6e3fa6_1080p_cmd_mode_dsi_panel.xml:system/etc/qdcm_calib_data_samsung_s6e3fa6_1080p_cmd_mode_dsi_panel.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/oneplus/cheeseburger/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/oneplus/cheeseburger/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/oneplus/cheeseburger/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/libOmxVpp.so:system/lib64/libOmxVpp.so \
@@ -452,7 +436,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/oneplus/cheeseburger/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -760,22 +743,7 @@ PRODUCT_PACKAGES += \
     libgpustats \
     libsdm-disp-apis \
     libthermalclient \
-    libtime_genoff \
-    QtiTelephonyService \
-    TimeService \
-    datastatusnotification \
-    embms \
-    shutdownlistener \
-    CNEService \
-    QtiTetherService \
-    com.qualcomm.location \
-    dpmserviceapp \
-    qcrilmsgtunnel \
-    colorservice \
-    ims \
-    imssettings \
-    qcnvitems \
-    qcrilhook
+    libtime_genoff
 endif
 
 -include vendor/extra/devices.mk
