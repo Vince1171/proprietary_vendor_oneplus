@@ -1163,6 +1163,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
+    com.qualcomm.qti.ant@1.0 \
     libantradio \
     vendor.qti.hardware.fm@1.0 \
     libbtnv \
